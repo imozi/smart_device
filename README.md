@@ -1,2 +1,4 @@
-# smart_device
-Smart Device
+# Smart Device - Умные технологии
+## Краткая инструкция по запуску проекта
+
+ 
