@@ -1,0 +1,142 @@
+.header {
+  display: flex;
+  align-items: center;
+  max-width: 1460px;
+  margin: 0 auto;
+  margin-bottom: 230px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.header__feedback-list {
+  @include list-reset;
+  display: flex;
+  align-items: center;
+  color: $white;
+  margin-left: auto;
+}
+
+.header__feedback-list a {
+  color: inherit;
+}
+
+.header__feedback-email {
+  position: relative;
+  padding-left: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 19px;
+    height: 14px;
+    background-image: url("../img/icon-email.svg");
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+  }
+}
+
+.header__feedback-phone {
+  position: relative;
+  margin-left: 87px;
+  margin-right: 50px;
+  padding-left: 34px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+  }
+}
+
+.header__feedback-email,
+.header__feedback-phone {
+  &:hover,
+  &:focus {
+    color: $white-60;
+  }
+
+  &:active {
+    color: $white-30;
+  }
+}
+
+.header__callback {
+  min-width: 182px;
+  padding: 14px 27px;
+  border: 1px solid $white;
+  border-radius: 5px;
+  font-family: "RobotoCondensed", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    border-color: $blue;
+    background-color: $blue;
+  }
+
+  &:active {
+    background-color: $blue-dark;
+  }
+}
+
+@media (max-width: $tablet-screen) {
+  .header {
+    margin-bottom: 117px;
+  }
+
+  .header__feedback-email {
+    font-size: 0;
+    margin-right: 33px;
+
+    &::before {
+      width: 25px;
+      height: 18px;
+    }
+  }
+
+  .header__feedback-phone {
+    font-size: 0;
+    margin: 0;
+
+    &::before {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .header__callback {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-screen) {
+  .header {
+    padding-left: 17px;
+    padding-right: 15px;
+    margin-bottom: 231px;
+  }
+
+  .header__logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header__feedback-email {
+    padding: 0;
+    padding-right: 23px;
+  }
+}
