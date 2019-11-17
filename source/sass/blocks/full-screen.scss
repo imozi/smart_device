@@ -1,0 +1,29 @@
+.full-screen {
+  padding-top: 33px;
+  padding-bottom: 273px;
+  background-color: #1b2d37;
+  background-image: url("../img/full-screen-mask@1x.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/full-screen-mask@2x.png");
+  }
+}
+
+
+@media (max-width: $tablet-screen) {
+  .full-screen {
+    padding-top: 20px;
+    padding-bottom: 163px;
+  }
+}
+
+@media (max-width: $mobile-screen) {
+  .full-screen {
+    padding-top: 17px;
+    padding-bottom: 69px;
+  }
+}

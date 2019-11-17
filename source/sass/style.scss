@@ -1,1 +1,10 @@
-//style
+//global style
+@import "reset/normalize.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "./global/general.scss";
+
+//blocks
+@import "blocks/full-screen.scss";
+@import "blocks/header.scss";
+@import "blocks/intro.scss";
