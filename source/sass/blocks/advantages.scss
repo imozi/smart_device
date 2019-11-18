@@ -1,3 +1,7 @@
+.advantages {
+  margin-bottom: 76px;
+}
+
 .advantages__list {
   @include list-reset;
   display: flex;
@@ -55,6 +59,10 @@
 
 
 @media (max-width: $tablet-screen) {
+  .advantages {
+    margin-bottom: 24px;
+  }
+
   .advantages__list li {
     max-width: 47.891%;
     min-height: 306px;
@@ -65,10 +73,19 @@
     margin-top: 2px;
     margin-bottom: 10px;
   }
+
+  .advantages__list .advantages__confidentiality,
+  .advantages__list .advantages__cost {
+    min-height: 233px;
+  }
 }
 
 
 @media (max-width: $mobile-screen) {
+  .advantages {
+    margin-bottom: 58px;
+  }
+
   .advantages__list {
     display: block;
   }

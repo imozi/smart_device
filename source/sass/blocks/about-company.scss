@@ -1,0 +1,127 @@
+.about-company {
+  position: relative;
+  margin-bottom: 110px;
+}
+
+.about-company__year {
+  position: absolute;
+  top: 2px;
+  left: -27px;
+}
+
+.about-company__year img {
+  width: 220px;
+  height: 317px;
+}
+
+.about-company__description {
+  margin-left: 179px;
+}
+
+.about-company__description h2 {
+  margin: 0;
+  margin-bottom: 23px;
+  font-family: "RobotoCondensed", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about-company__subtitle {
+  margin-bottom: 33px;
+}
+
+.about-company__subtitle p {
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+.about-company__subtitle span {
+  display: none;
+}
+
+.about-company__description a {
+  display: inline-block;
+  min-width: 182px;
+  padding: 14px 50px;
+  border: 1px solid $blue;
+  border-radius: 5px;
+  font-family: "RobotoCondensed", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $blue;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $blue;
+  }
+
+  &:active {
+    background-color: $blue-dark;
+  }
+}
+
+@media (max-width: $tablet-screen) {
+  .about-company__year {
+    top: -2px;
+  }
+
+  .about-company__year img {
+    width: auto;
+    height: auto;
+  }
+
+  .about-company__description {
+    margin-left: 186px;
+  }
+
+  .about-company__description h2 {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about-company__subtitle {
+    height: 202px;
+    overflow-y: hidden;
+  }
+
+  .about-company__description a {
+    min-width: 181px;
+    padding: 14px 0;
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: $mobile-screen) {
+  .about-company__year {
+    display: none;
+  }
+
+  .about-company__description {
+    margin: 0;
+  }
+
+  .about-company__description h2 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about-company__subtitle {
+    height: 350px;
+  }
+
+  .about-company__subtitle p {
+    margin-bottom: 38px;
+  }
+
+  .about-company__description a {
+    margin-top: 8px;
+  }
+}

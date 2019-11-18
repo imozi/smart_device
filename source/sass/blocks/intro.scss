@@ -20,10 +20,10 @@
   &::before {
     content: "";
     position: absolute;
-    top: -9px;
-    left: 2px;
-    width: 671px;
-    height: 520px;
+    top: 12px;
+    left: 45px;
+    width: 634px;
+    height: 488px;
     background-image: url("../img/triangle.svg");
     background-repeat: no-repeat;
     z-index: 1;
@@ -34,6 +34,8 @@
   position: relative;
   width: 705px;
   height: 515px;
+  top: 2px;
+  left: 51px;
   z-index: 2;
 }
 
@@ -59,7 +61,7 @@
   color: $white;
   margin: 0;
   padding-left: 93px;
-  margin-bottom: 45px;
+  margin-bottom: 42px;
 
   &::before {
     content: "";
@@ -76,7 +78,7 @@
   display: block;
   width: 407px;
   margin-left: 93px;
-  padding: 20px 20px;
+  padding: 19px 20px;
   border-radius: 5px;
   background-color: $blue;
   color: $white;
@@ -106,6 +108,7 @@
 
 .intro__scroll {
   position: absolute;
+  left: 30px;
   bottom: -193px;
   color: $white;
   font-size: 14px;
@@ -137,12 +140,12 @@
     font-size: 18px;
     line-height: 28px;
     padding-left: 45px;
-    margin-bottom: 54px;
+    margin-bottom: 52px;
 
     &::before {
       width: 33px;
-      left: 0;
-      top: 16px;
+      left: -3px;
+      top: 14px;
     }
   }
 
@@ -155,7 +158,7 @@
     &::before {
       top: -50px;
       left: 140px;
-      width: 481px;
+      width: 495px;
       height: 384px;
     }
   }
@@ -164,8 +167,8 @@
     position: relative;
     width: 465px;
     height: 340px;
-    top: -25px;
-    left: 205px;
+    top: -21px;
+    left: 207px;
   }
 
   .intro__scroll {
@@ -213,15 +216,15 @@
   .intro__col-right img {
     width: 301px;
     height: 220px;
-    left: 8px;
-    top: -132px;
+    left: 7px;
+    top: -138px;
   }
 
   .intro__col-right {
     &::before {
-      top: -155px;
+      top: -158px;
       left: 133px;
-      width: 460px;
+      width: 476px;
       height: 366px;
     }
   }

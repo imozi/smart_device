@@ -3,7 +3,7 @@
   align-items: center;
   max-width: 1460px;
   margin: 0 auto;
-  margin-bottom: 230px;
+  margin-bottom: 224px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -95,16 +95,18 @@
 
 @media (max-width: $tablet-screen) {
   .header {
-    margin-bottom: 117px;
+    margin-bottom: 112px;
+    padding-right: 13px;
   }
 
   .header__feedback-email {
     font-size: 0;
-    margin-right: 33px;
+    margin-right: 19px;
 
     &::before {
       width: 25px;
       height: 18px;
+      top: -7px;
     }
   }
 
@@ -115,6 +117,7 @@
     &::before {
       width: 24px;
       height: 24px;
+      top: -7px;
     }
   }
 
@@ -138,6 +141,17 @@
 
   .header__feedback-email {
     padding: 0;
+    margin-right: 31px;
     padding-right: 15px;
+
+    &::before {
+      top: 1px;
+    }
+  }
+
+  .header__feedback-phone {
+    &::before {
+      top: 1px;
+    }
   }
 }
