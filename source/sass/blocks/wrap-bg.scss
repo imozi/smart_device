@@ -1,0 +1,16 @@
+.wrap-bg {
+  padding-top: 109px;
+}
+
+@media (max-width: $tablet-screen) {
+  .wrap-bg {
+    padding-top: 54px;
+  }
+}
+
+
+@media (max-width: $mobile-screen) {
+  .wrap-bg {
+    padding-top: 37px;
+  }
+}

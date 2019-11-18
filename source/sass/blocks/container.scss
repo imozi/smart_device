@@ -1,0 +1,11 @@
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+@media (max-width: $mobile-screen) {
+  .container{
+    padding: 0 16px 0 14px;
+  }
+}

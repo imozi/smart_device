@@ -126,8 +126,9 @@
 @media (max-width: $mobile-screen) {
   .header {
     padding-left: 17px;
-    padding-right: 15px;
+    padding-right: 7px;
     margin-bottom: 231px;
+    align-items: flex-start;
   }
 
   .header__logo {
@@ -137,6 +138,6 @@
 
   .header__feedback-email {
     padding: 0;
-    padding-right: 23px;
+    padding-right: 15px;
   }
 }
