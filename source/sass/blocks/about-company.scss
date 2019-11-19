@@ -4,22 +4,23 @@
 
 .about-company__year {
   position: absolute;
-  top: 2px;
-  left: -27px;
+  top: 11px;
+  left: 2px;
 }
 
 .about-company__year img {
-  width: 220px;
-  height: 317px;
+  height: 303.88px;
+  width: 114.13px;
 }
 
 .about-company__description {
-  margin-left: 179px;
+  position: relative;
+  padding-left: 179px;
 }
 
 .about-company__description h2 {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   font-family: "RobotoCondensed", "Arial", "Helvetica", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -28,12 +29,12 @@
 }
 
 .about-company__subtitle {
-  margin-bottom: 33px;
+  margin-bottom: 38px;
 }
 
 .about-company__subtitle p {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 }
 
 .about-company__subtitle span {
@@ -69,32 +70,38 @@
 
 @media (max-width: $tablet-screen) {
   .about-company__year {
-    top: -2px;
+    top: 10px;
+    left: 4px;
   }
 
   .about-company__year img {
-    width: auto;
-    height: auto;
+    height: 346.81px;
+    width: 130.26px;
   }
 
   .about-company__description {
-    margin-left: 186px;
+    padding-left: 186px;
   }
 
   .about-company__description h2 {
     font-size: 32px;
     line-height: 45px;
+    margin-bottom: 27px;
   }
 
   .about-company__subtitle {
-    height: 202px;
+    height: 197px;
     overflow-y: hidden;
+  }
+
+  .about-company__subtitle p {
+    margin-bottom: 20px;
   }
 
   .about-company__description a {
     min-width: 181px;
     padding: 14px 0;
-    margin-top: 3px;
+    margin-top: 8px;
   }
 }
 
@@ -104,12 +111,13 @@
   }
 
   .about-company__description {
-    margin: 0;
+    padding: 0;
   }
 
   .about-company__description h2 {
     font-size: 28px;
     line-height: 39px;
+    margin-bottom: 20px;
   }
 
   .about-company__subtitle {
@@ -118,10 +126,10 @@
   }
 
   .about-company__subtitle p {
-    margin-bottom: 38px;
+    margin-bottom: 40px;
   }
 
   .about-company__description a {
-    margin-top: 8px;
+    margin-top: 11px;
   }
 }

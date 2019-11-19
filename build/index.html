@@ -8,9 +8,9 @@
   <title>Smart Device - Умные технологии</title>
   <link rel="stylesheet" href="css/style.min.css">
   <script>
-      document.createElement("picture");
-    </script>
-    <script src="js/picturefill.js" async="" type="text/javascript"></script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async="" type="text/javascript"></script>
 </head>
 
 <body>
@@ -89,7 +89,11 @@
         </section>
         <section class="about-company">
           <div class="about-company__year">
-            <img src="img/year@1x.png" srcset="img/year@2x.png 2x" alt="Год основания 2005">
+            <picture>
+              <source srcset="img/year-tablet@2x.png 2x" media="(max-width: 1023px)">
+              <source srcset="img/year-tablet@1x.png" media="(max-width: 1023px)">
+              <img src="img/year@1x.png" srcset="img/year@2x.png 2x" alt="Год основания 2005">
+            </picture>
           </div>
           <div class="about-company__description">
             <h2>О компании</h2>
@@ -110,9 +114,15 @@
       <div class="container">
         <h2>Service Device предлагает следующие товары и услуги</h2>
         <ul class="services__list">
-          <li><a href="#" class="services__production"><h3>Производство печатных плат</h3></a></li>
-          <li><a href="#" class="services__installation"><h3>Монтаж печатных плат</h3></a></li>
-          <li><a href="#" class="services__component-parts"><h3>Комплектующие для светотехники</h3></a></li>
+          <li><a href="#" class="services__production">
+              <h3>Производство печатных плат</h3>
+            </a></li>
+          <li><a href="#" class="services__installation">
+              <h3>Монтаж печатных плат</h3>
+            </a></li>
+          <li><a href="#" class="services__component-parts">
+              <h3>Комплектующие для светотехники</h3>
+            </a></li>
         </ul>
       </div>
     </section>
