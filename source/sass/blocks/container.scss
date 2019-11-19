@@ -4,12 +4,69 @@
   padding: 0 25px;
 }
 
-.container--flex {
-  display: flex;
+.container--bgi {
+  position: relative;
+  padding-top: 113px;
+  padding-bottom: 110px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 627px;
+    height: 1150px;
+    background-image: url("../img/triangle-left.svg"), url("../img/triangle-left-circle.svg");
+    background-position: 397px 4px, -100px 402px;
+    background-repeat: no-repeat;
+    top: 43px;
+    left: -545px;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    min-width: 1150px;
+    height: 586px;
+    background-image: url("../img/triangle-right-circle.svg"), url("../img/triangle-right.svg");
+    background-position: -200px -140px, 797px 106px;
+    background-repeat: no-repeat;
+    top: 289px;
+    left: 410px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: $tablet-screen) {
+  .container--bgi {
+    padding-top: 54px;
+    padding-bottom: 83px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      min-width: 600px;
+      height: 586px;
+      background-image: url("../img/triangle-right-circle.svg");
+      background-position: -200px -199px;
+    }
+  }
 }
 
 @media (max-width: $mobile-screen) {
   .container {
     padding: 0 16px 0 14px;
+  }
+
+  .container--bgi {
+    padding-top: 37px;
+    padding-bottom: 64px;
+
+    &::after {
+      top: 851px;
+      left: 81px;
+      background-position: -200px -199px;
+    }
   }
 }

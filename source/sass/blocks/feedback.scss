@@ -7,23 +7,22 @@
 
 .feedback__form-wrap {
   position: relative;
-  max-width: 574px;
+  width: 574px;
   margin-left: auto;
   color: $white;
 }
 
 .feedback__image {
-  position: relative;
-  padding-top: 69px;
-  padding-left: 7px;
-  margin-right: 30px;
+  position: absolute;
+  width: 40%;
+  height: auto;
 
   &::before {
     content: "";
     position: absolute;
     width: 671px;
     height: 641px;
-    background-image: url("../img/triangle-form.svg"), url("../img/triangle-form-right");
+    background-image: url("../img/triangle-form.svg");
     background-repeat: no-repeat;
   }
 }

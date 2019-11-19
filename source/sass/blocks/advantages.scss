@@ -5,16 +5,15 @@
 .advantages__list {
   @include list-reset;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .advantages__list li {
-  max-width: calc(100% - 600px);
+  max-width: 48.4%;
   min-height: 299px;
   border: 1px solid #ebebeb;
   border-left: 3px solid $blue;
-  margin-right: 30px;
   margin-bottom: 30px;
   padding: 40px 43px 49px 41px;
   background-color: $white;
