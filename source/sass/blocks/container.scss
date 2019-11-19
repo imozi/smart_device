@@ -4,6 +4,10 @@
   padding: 0 25px;
 }
 
+.container--flex {
+  display: flex;
+}
+
 @media (max-width: $mobile-screen) {
   .container {
     padding: 0 16px 0 14px;
