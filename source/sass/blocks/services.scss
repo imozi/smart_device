@@ -1,0 +1,184 @@
+.services {
+  padding-top: 90px;
+  padding-bottom: 126px;
+  background-color: $blue-darkest;
+}
+
+.services h2 {
+  margin: 0;
+  margin-bottom: 51px;
+  font-family: "RobotoCondensed", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: $white;
+}
+
+.services__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services__list li {
+  width: 31.623%;
+}
+
+.services__list a {
+  display: block;
+  position: relative;
+  min-height: 620px;
+  padding-top: 50px;
+  padding-left: 43px;
+  color: $white;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 63px;
+    height: 63px;
+    background-color: $blue;
+    background-image: url("../img/icon-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 6px 9px;
+  }
+
+  &:hover::after {
+    background-color: $blue-dark;
+  }
+}
+
+.services__list h3 {
+  max-width: 160px;
+  margin: 0;
+  font-family: "RobotoCondensed", "Arial", "Helvetica", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.services__production {
+  background-image: url("../img/service-01@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/service-01@2x.png");
+  }
+}
+
+.services__installation {
+  background-image: url("../img/service-02@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/service-02@2x.png");
+  }
+}
+
+.services__component-parts {
+  background-image: url("../img/service-03@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/service-03@2x.png");
+  }
+}
+
+@media (max-width: $tablet-screen) {
+  .services {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .services h2 {
+    max-width: 613px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .services__list li {
+    width: 100%;
+    margin-bottom: 46px;
+  }
+
+  .services__list a {
+    padding-top: 38px;
+    min-height: 256px;
+    background-size: cover;
+  }
+
+  .services__production {
+    background-image: url("../img/service-01-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service-01-tablet@2x.png");
+    }
+  }
+
+  .services__installation {
+    background-image: url("../img/service-02-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service-02-tablet@2x.png");
+    }
+  }
+
+  .services__component-parts {
+    background-image: url("../img/service-03-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service-03-tablet@2x.png");
+    }
+  }
+}
+
+@media (max-width: $mobile-screen) {
+  .services h2 {
+    max-width: 613px;
+    margin-left: 11px;
+    margin-bottom: 42px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .services__list li {
+    margin-bottom: 30px;
+  }
+
+  .services__list a {
+    padding-top: 22px;
+    padding-left: 36px;
+    min-height: 256px;
+  }
+
+
+  .services__production {
+    background-image: url("../img/service-01-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service-01-mobile@2x.png");
+    }
+  }
+
+  .services__installation {
+    background-image: url("../img/service-02-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service-02-mobile@2x.png");
+    }
+  }
+
+  .services__component-parts {
+    background-image: url("../img/service-03-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/service-03-mobile@2x.png");
+    }
+  }
+}
