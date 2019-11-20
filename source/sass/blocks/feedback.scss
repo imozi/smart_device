@@ -15,10 +15,11 @@
 }
 
 .feedback__image {
-  display: none;
   position: absolute;
-  width: 40%;
-  height: auto;
+  width: 511px;
+  height: 294px;
+  top: 162px;
+  left: 354px;
 
   &::before {
     content: "";
