@@ -3,14 +3,20 @@
   align-items: center;
   max-width: 1460px;
   margin: 0 auto;
-  margin-bottom: 224px;
-  padding-left: 25px;
-  padding-right: 25px;
+  margin-bottom: 225px;
+  padding-left: 23px;
+  padding-right: 26px;
+}
+
+.header__logo {
+  width: 200px;
+  height: 58px;
 }
 
 .header__feedback-list {
   @include list-reset;
   display: flex;
+  padding-bottom: 6px;
   align-items: center;
   color: $white;
   margin-left: auto;
@@ -28,7 +34,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 2px;
     width: 19px;
     height: 14px;
     background-image: url("../img/icon-email.svg");
@@ -39,9 +45,9 @@
 
 .header__feedback-phone {
   position: relative;
-  margin-left: 87px;
-  margin-right: 50px;
-  padding-left: 34px;
+  margin-left: 88px;
+  margin-right: 49px;
+  padding-left: 33px;
 
   &::before {
     content: "";
@@ -70,7 +76,7 @@
 
 .header__callback {
   min-width: 182px;
-  padding: 14px 27px;
+  padding: 13px 27px;
   border: 1px solid $white;
   border-radius: 5px;
   font-family: "RobotoCondensed", "Arial", "Helvetica", sans-serif;
@@ -96,7 +102,8 @@
 @media (max-width: $tablet-screen) {
   .header {
     margin-bottom: 112px;
-    padding-right: 13px;
+    padding-right: 15px;
+    padding-left: 26px;
   }
 
   .header__feedback-email {
@@ -106,7 +113,8 @@
     &::before {
       width: 25px;
       height: 18px;
-      top: -7px;
+      top: -4px;
+      left: 1px;
     }
   }
 
@@ -117,7 +125,7 @@
     &::before {
       width: 24px;
       height: 24px;
-      top: -7px;
+      top: -5px;
     }
   }
 
@@ -135,7 +143,7 @@
   }
 
   .header__logo {
-    width: 38px;
+    max-width: 148px;
     height: 38px;
   }
 
@@ -145,7 +153,8 @@
     padding-right: 15px;
 
     &::before {
-      top: 1px;
+      top: 2px;
+      left: -2px;
     }
   }
 

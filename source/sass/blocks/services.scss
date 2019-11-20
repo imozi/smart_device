@@ -31,12 +31,11 @@
   display: block;
   position: relative;
   min-height: 620px;
-  padding-top: 50px;
-  padding-left: 43px;
+  padding-bottom: 20px;
   color: $white;
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: 100% 100%;
+  background-size: cover;
 
   &::after {
     content: "";
@@ -68,14 +67,20 @@
 }
 
 .services__production {
+  padding-top: 50px;
+  padding-left: 43px;
   background-image: url("../img/service-01@1x.png");
 
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-color: $blue-light-darkest;
     background-image: url("../img/service-01@2x.png");
   }
 }
 
 .services__installation {
+  padding-top: 50px;
+  padding-left: 43px;
   background-image: url("../img/service-02@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -84,6 +89,8 @@
 }
 
 .services__component-parts {
+  padding-top: 50px;
+  padding-left: 43px;
   background-image: url("../img/service-03@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -94,13 +101,19 @@
 @media (max-width: $tablet-screen) {
   .services {
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
+  }
+
+  .services .container {
+    padding-left: 26px;
+    padding-right: 21px;
   }
 
   .services h2 {
     max-width: 613px;
     font-size: 32px;
     line-height: 45px;
+    margin-bottom: 48px;
   }
 
   .services__list li {
@@ -109,12 +122,13 @@
   }
 
   .services__list a {
-    padding-top: 38px;
     min-height: 256px;
-    background-size: cover;
   }
 
   .services__production {
+    padding-top: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
     background-image: url("../img/service-01-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -123,6 +137,9 @@
   }
 
   .services__installation {
+    padding-top: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
     background-image: url("../img/service-02-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -131,6 +148,9 @@
   }
 
   .services__component-parts {
+    padding-top: 50px;
+    padding-left: 46px;
+    padding-right: 45px;
     background-image: url("../img/service-03-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -142,6 +162,11 @@
 @media (max-width: $mobile-screen) {
   .services {
     padding-bottom: 35px;
+  }
+
+  .services .container {
+    padding-left: 14px;
+    padding-right: 16px;
   }
 
   .services h2 {
@@ -158,7 +183,7 @@
   }
 
   .services__list a {
-    padding-top: 22px;
+    padding-top: 20px;
     padding-left: 36px;
     min-height: 256px;
   }
@@ -179,7 +204,8 @@
     }
   }
 
-  .services__component-parts {
+  .services__list .services__component-parts {
+    padding-top: 30px;
     background-image: url("../img/service-03-mobile@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

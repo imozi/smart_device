@@ -1,18 +1,21 @@
 .feedback {
   position: relative;
-  padding-top: 93px;
+  padding-top: 91px;
   padding-bottom: 113px;
   background-color: $blue;
 }
 
 .feedback__form-wrap {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: 574px;
   margin-left: auto;
   color: $white;
 }
 
 .feedback__image {
+  display: none;
   position: absolute;
   width: 40%;
   height: auto;
@@ -45,5 +48,49 @@
 .feedback__form-wrap p {
   margin: 0;
   margin-left: 4px;
-  margin-bottom: 48px;
+  margin-bottom: 49px;
+}
+
+@media (max-width: $tablet-screen) {
+  .feedback {
+    padding-top: 80px;
+    padding-bottom: 104px;
+  }
+
+  .feedback__form-wrap {
+    margin: 0 auto;
+    width: 589px;
+  }
+
+  .feedback__form-wrap h2 {
+    font-size: 32px;
+    line-height: 45px;
+    margin-bottom: 16px;
+  }
+
+  .feedback__form-wrap p {
+    margin-bottom: 52px;
+  }
+}
+
+@media (max-width: $mobile-screen) {
+  .feedback {
+    padding-top: 29px;
+    padding-bottom: 42px;
+  }
+
+  .feedback__form-wrap {
+    width: 100%;
+  }
+
+  .feedback__form-wrap h2 {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 13px;
+  }
+
+  .feedback__form-wrap p {
+    margin: 0;
+    margin-bottom: 24px;
+  }
 }

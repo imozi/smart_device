@@ -1,6 +1,6 @@
 .full-screen {
   padding-top: 33px;
-  padding-bottom: 273px;
+  padding-bottom: 275px;
   background-color: #1b2d37;
   background-image: url("../img/full-screen-mask@1x.png");
   background-position: center top;
@@ -24,6 +24,6 @@
 @media (max-width: $mobile-screen) {
   .full-screen {
     padding-top: 17px;
-    padding-bottom: 69px;
+    padding-bottom: 71px;
   }
 }

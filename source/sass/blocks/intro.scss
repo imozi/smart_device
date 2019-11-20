@@ -14,14 +14,14 @@
 
 .intro__col-right {
   position: absolute;
-  right: 0;
-  top: -57px;
+  right: -3px;
+  top: -60px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 12px;
-    left: 45px;
+    top: 15px;
+    left: 41px;
     width: 634px;
     height: 488px;
     background-image: url("../img/triangle.svg");
@@ -50,17 +50,18 @@
   color: #ffffff;
   margin: 0;
   margin-left: -6px;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .intro__subtitle {
   position: relative;
   font-weight: normal;
   font-size: 22px;
-  line-height: 34px;
+  line-height: 35px;
   color: $white;
   margin: 0;
   padding-left: 93px;
+  padding-right: 20px;
   margin-bottom: 42px;
 
   &::before {
@@ -68,7 +69,7 @@
     position: absolute;
     width: 66px;
     height: 2px;
-    left: 0;
+    left: -2px;
     top: 17px;
     background-color: $white;
   }
@@ -76,9 +77,9 @@
 
 .intro__col-left a {
   display: block;
-  width: 407px;
+  width: 406px;
   margin-left: 93px;
-  padding: 19px 20px;
+  padding: 18px 20px;
   border-radius: 5px;
   background-color: $blue;
   color: $white;
@@ -108,8 +109,8 @@
 
 .intro__scroll {
   position: absolute;
-  left: 30px;
-  bottom: -193px;
+  left: 31px;
+  bottom: -194px;
   color: $white;
   font-size: 14px;
   font-weight: normal;
@@ -126,7 +127,7 @@
   }
 
   .intro__col-left {
-    max-width: 60%;
+    max-width: 62%;
   }
 
   .intro__title {
@@ -156,8 +157,8 @@
 
   .intro__col-right {
     &::before {
-      top: -50px;
-      left: 140px;
+      top: -48px;
+      left: 135px;
       width: 495px;
       height: 384px;
     }
@@ -167,8 +168,8 @@
     position: relative;
     width: 465px;
     height: 340px;
-    top: -21px;
-    left: 207px;
+    top: -17px;
+    left: 204px;
   }
 
   .intro__scroll {
@@ -201,8 +202,8 @@
   }
 
   .intro__col-left a {
-    width: 287px;
-    margin-left: 0;
+    width: 286px;
+    margin-left: -2px;
   }
 
   .intro__full-text-link {
@@ -216,14 +217,14 @@
   .intro__col-right img {
     width: 301px;
     height: 220px;
-    left: 7px;
-    top: -138px;
+    left: 4px;
+    top: -134px;
   }
 
   .intro__col-right {
     &::before {
-      top: -158px;
-      left: 133px;
+      top: -156px;
+      left: 129px;
       width: 476px;
       height: 366px;
     }
