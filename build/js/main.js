@@ -1,3 +1,5 @@
+/*eslint-disable */
+// Отключил проверку из за того что document, window, localStorage не объявлены
 'use strict';
 
 (function () {

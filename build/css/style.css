@@ -1244,7 +1244,7 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/airplane@1x.png"), url("../img/triangle-form.svg");
     background-size: 511px, 671px, 671px 641px;
     background-repeat: no-repeat;
-    background-position: 173px 224px,0 0; }
+    background-position: 173px 224px, 0 0; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .feedback__form-wrap::before {
         background-image: url("../img/airplane@2x.png"), url("../img/triangle-form.svg"); } }
