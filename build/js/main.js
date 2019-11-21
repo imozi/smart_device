@@ -10,10 +10,43 @@
   var modalOverlay = document.querySelector('.modal__overlay');
   var footerNav = document.querySelector('.footer__nav');
   var footerContacts = document.querySelector('.footer__contacts');
+  var mainFormTel = document.querySelector('.form input[type=tel]')
   var modalForm = document.querySelector('.modal__form');
   var modalFormName = modalForm.querySelector('input[type="text"]');
   var modalFormTel = modalForm.querySelector('input[type="tel"]');
   var modalFormQuestion = modalForm.querySelector('textarea');
+  var feedbackScroll = document.querySelector('a[href="#feedback"]');
+  var feedbackAnchor = document.querySelector('#feedback');
+  var scrollDownScroll = document.querySelector('.intro__scroll');
+  var scrollDownAnchor = document.querySelector('#main');
+
+
+  if (feedbackScroll && feedbackAnchor) {
+    feedbackScroll.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      feedbackAnchor.scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  }
+
+  if (scrollDownScroll && scrollDownAnchor) {
+    scrollDownScroll.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      scrollDownAnchor.scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  }
+
+
+  if (mainFormTel && modalFormTel) {
+    var maskOptions = {
+      mask: '+{7}(000)000-00-00'
+    };
+    IMask(modalFormTel, maskOptions);
+    IMask(mainFormTel, maskOptions);
+  }
 
   var openModal = function () {
     modal.classList.add('modal--show');
@@ -73,10 +106,23 @@
 
   var onClickFooterNav = function () {
     footerNav.classList.toggle('footer__nav--show');
+
+    var isClass = footerContacts.classList.contains('footer__contacts--show');
+
+    if (isClass) {
+      footerContacts.classList.remove('footer__contacts--show');
+    }
+
   };
 
   var onClickFooterContacts = function () {
     footerContacts.classList.toggle('footer__contacts--show');
+
+    var isClass = footerNav.classList.contains('footer__nav--show');
+
+    if (isClass) {
+      footerNav.classList.remove('footer__nav--show');
+    }
   };
 
   if (callbackBtn && modal) {

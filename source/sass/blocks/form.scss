@@ -18,6 +18,7 @@
   width: 270px;
   height: 50px;
   padding-left: 17px;
+  border-radius: 0;
 }
 
 .form input[type="text"],
@@ -41,6 +42,7 @@
   height: 154px;
   resize: none;
   padding: 16px;
+  border-radius: 0;
 }
 
 .form__field-submit {
@@ -66,6 +68,16 @@
   text-transform: uppercase;
   color: $white;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+    background-color: $white;
+  }
+
+  &:active {
+    color: #0096d6;
+  }
 }
 
 .form__field-submit label {
@@ -102,6 +114,15 @@
     background-repeat: no-repeat;
     background-position: center center;
   }
+
+  &:hover::before {
+    transform: scale(1.2);
+  }
+}
+
+.form__field-submit input[type="checkbox"] {
+  right: 253px;
+  bottom: 16px;
 }
 
 .form__field-submit input[type="checkbox"]:checked + label::after {

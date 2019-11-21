@@ -75,7 +75,8 @@
 }
 
 .header__callback {
-  min-width: 182px;
+  display: block;
+  width: 182px;
   padding: 13px 27px;
   border: 1px solid $white;
   border-radius: 5px;

@@ -119,6 +119,11 @@
   opacity: 0.5;
   transform: rotate(-90deg);
   transform-origin: left;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: $tablet-screen) {
