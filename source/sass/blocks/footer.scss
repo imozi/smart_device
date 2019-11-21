@@ -1,6 +1,5 @@
 .footer {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   bottom: 0;
   color: $blue-darkest;
@@ -261,6 +260,7 @@
     background-repeat: no-repeat;
     background-size: 16px 16px;
     background-position: 94% 28px;
+    cursor: pointer;
   }
 
   .footer__nav {

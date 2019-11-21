@@ -12,28 +12,23 @@
   width: 574px;
   margin-left: auto;
   color: $white;
-}
-
-.feedback__image {
-  position: absolute;
-  width: 511px;
-  height: 294px;
-  top: 162px;
-  left: 354px;
 
   &::before {
     content: "";
     position: absolute;
-    width: 671px;
+    top: -152px;
+    left: -794px;
+    width: 688px;
     height: 641px;
-    background-image: url("../img/triangle-form.svg");
+    background-image: url("../img/airplane@1x.png"), url("../img/triangle-form.svg");
+    background-size: 511px, 671px, 671px 641px;
     background-repeat: no-repeat;
-  }
-}
+    background-position: 173px 224px, 0 0;
 
-.feedback__image img {
-  width: 100%;
-  height: auto;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/airplane@2x.png"), url("../img/triangle-form.svg");
+    }
+  }
 }
 
 .feedback__form-wrap h2 {
@@ -61,6 +56,10 @@
   .feedback__form-wrap {
     margin: 0 auto;
     width: 589px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .feedback__form-wrap h2 {

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Smart Device - Умные технологии. Предоставляем услуги: производство, монтаж печатных плат, продажу комплектующих.">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device - Умные технологии</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -14,6 +15,7 @@
 </head>
 
 <body>
+
   <div class="full-screen">
     <header class="header">
       <a class="header__logo">
@@ -36,7 +38,7 @@
       <div class="intro__col-left">
         <p class="intro__title">Печатные платы</p>
         <p class="intro__subtitle">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a href="#">
+        <a href="#feedback">
           <span class="intro__full-text-link">Получить бесплатную консультацию</span>
           <span class="intro__simple-text-link">Бесплатная консультация</span>
         </a>
@@ -45,6 +47,30 @@
         <img src="img/board@1x.png" srcset="img/board@2x.png 2x" alt="Фотография платы">
       </div>
       <a href="#" class="intro__scroll">Скролл вниз</a>
+    </div>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__container">
+        <h2>Закажите звонок</h2>
+        <button class="modal__close" type="button">Закрыть форму</button>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <form class="modal__form" method="POST" action="#">
+          <div class="modal__field-contact">
+            <input id="name-field" name="name" type="text" placeholder="Имя" aria-label="Ваше Имя" required="">
+            <input id="telephone-field" name="telephone" type="tel" placeholder="Телефон" aria-label="Ваш телефон" required="">
+            <label for="name-field" class="visually-hidden">Имя</label>
+            <label for="telephone-field" class="visually-hidden">Телефон</label>
+          </div>
+          <div class="modal__field-textaria">
+            <textarea placeholder="Ваш вопрос" aria-label="Ваш вопрос" required=""></textarea>
+          </div>
+          <div class="modal__field-submit">
+            <button type="submit">Отправить</button>
+            <input id="you-consent" name="consent" type="checkbox" class="visually-hidden" required="" checked="">
+            <label for="you-consent">Я согласен на обработку персональных данных</label>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -90,11 +116,7 @@
         </section>
         <section class="about-company">
           <div class="about-company__year">
-            <picture>
-              <source srcset="img/year-tablet@2x.png 2x" media="(max-width: 1023px)">
-              <source srcset="img/year-tablet@1x.png" media="(max-width: 1023px)">
-              <img src="img/year@1x.png" srcset="img/year@2x.png 2x" alt="Год основания 2005">
-            </picture>
+            <img src="img/year@1x.png" srcset="img/year@2x.png 2x" alt="Год 2005">
           </div>
           <div class="about-company__description">
             <h2>О компании</h2>
@@ -128,23 +150,20 @@
         </ul>
       </div>
     </section>
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <div class="container">
-        <div class="feedback__image">
-          <img src="img/airplane@1x.png" srcset="img/airplane@2x.png 2x" alt="Бумажный самолетик">
-        </div>
         <div class="feedback__form-wrap">
           <h2>Остались вопросы? Задайте их нам!</h2>
           <p>Мы проконсультируем Вас бесплатно</p>
           <form class="form" method="POST" action="#">
             <div class="form__field-contact">
-              <input id="name" name="name" type="text" placeholder="Имя" required="">
-              <input id="telephone" name="telephone" type="tel" placeholder="Телефон" required="">
+              <input id="name" name="name" type="text" placeholder="Имя" aria-label="Ваше Имя" required="">
+              <input id="telephone" name="telephone" type="tel" placeholder="Телефон" aria-label="Ваш телефон" required="">
               <label for="name" class="visually-hidden">Имя</label>
               <label for="telephone" class="visually-hidden">Телефон</label>
             </div>
             <div class="form__field-textaria">
-              <textarea placeholder="Ваш вопрос" required=""></textarea>
+              <textarea name="question" placeholder="Ваш вопрос" aria-label="Ваш вопрос" required=""></textarea>
             </div>
             <div class="form__field-submit">
               <button type="submit">Задать вопрос</button>
@@ -179,7 +198,6 @@
             </a></li>
         </ul>
       </div>
-
       <div class="footer__wrap-inner">
         <nav class="footer__nav">
           <p>Разделы сайта</p>
@@ -224,7 +242,6 @@
           <a href="#">Условия конфиденциальности</a>
           <a href="#">Developed by wow studio</a>
         </div>
-
       </div>
     </div>
   </footer>

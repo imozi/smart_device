@@ -33,6 +33,7 @@
   min-height: 620px;
   padding-bottom: 20px;
   color: $white;
+  background-color: $blue-light-darkest;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -69,32 +70,31 @@
 .services__production {
   padding-top: 50px;
   padding-left: 43px;
-  background-image: url("../img/service-01@1x.png");
-
+  background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-01@1x.jpg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-color: $blue-light-darkest;
-    background-image: url("../img/service-01@2x.png");
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-01@2x.jpg");
   }
 }
 
 .services__installation {
   padding-top: 50px;
   padding-left: 43px;
-  background-image: url("../img/service-02@1x.png");
+  background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-02@1x.jpg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/service-02@2x.png");
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-02@2x.jpg");
   }
 }
 
 .services__component-parts {
   padding-top: 50px;
   padding-left: 43px;
-  background-image: url("../img/service-03@1x.png");
+  background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-03@1x.jpg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/service-03@2x.png");
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-03@2x.jpg");
   }
 }
 
@@ -129,10 +129,11 @@
     padding-top: 40px;
     padding-left: 45px;
     padding-right: 45px;
-    background-image: url("../img/service-01-tablet@1x.png");
+    margin-right: 6px;
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-01-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/service-01-tablet@2x.png");
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-01-tablet@2x.jpg");
     }
   }
 
@@ -140,10 +141,10 @@
     padding-top: 40px;
     padding-left: 45px;
     padding-right: 45px;
-    background-image: url("../img/service-02-tablet@1x.png");
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-02-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/service-02-tablet@2x.png");
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-02-tablet@2x.jpg");
     }
   }
 
@@ -151,10 +152,10 @@
     padding-top: 50px;
     padding-left: 46px;
     padding-right: 45px;
-    background-image: url("../img/service-03-tablet@1x.png");
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-03-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/service-03-tablet@2x.png");
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-03-tablet@2x.jpg");
     }
   }
 }
@@ -189,27 +190,28 @@
   }
 
   .services__production {
-    background-image: url("../img/service-01-mobile@1x.png");
+    margin-right: 0;
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-01-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/service-01-mobile@2x.png");
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-01-mobile@2x.jpg");
     }
   }
 
   .services__installation {
-    background-image: url("../img/service-02-mobile@1x.png");
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-02-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/service-02-mobile@2x.png");
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-02-mobile@2x.jpg");
     }
   }
 
   .services__list .services__component-parts {
     padding-top: 30px;
-    background-image: url("../img/service-03-mobile@1x.png");
+    background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-03-mobile@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/service-03-mobile@2x.png");
+      background-image: linear-gradient(rgba(27, 45, 55, 0.8), rgba(27, 45, 55, 0.8)), url("../img/service-03-mobile@2x.jpg");
     }
   }
 }
