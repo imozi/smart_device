@@ -76,7 +76,16 @@
   }
 
   &:active {
-    color: #0096d6;
+    color: $blue-dark;
+  }
+
+  &:disabled {
+    opacity: 0.8;
+  }
+
+  &:disabled:hover {
+    color: $white;
+    background-color: transparent;
   }
 }
 
@@ -116,7 +125,7 @@
   }
 
   &:hover::before {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 

@@ -4,6 +4,7 @@
 
 (function () {
   var ESC_CODE = 27;
+  var body = document.querySelector('body');
   var callbackBtn = document.querySelector('.header__callback');
   var modal = document.querySelector('.modal');
   var closeBtnModal = document.querySelector('.modal__close');
@@ -20,6 +21,7 @@
   var scrollDownScroll = document.querySelector('.intro__scroll');
   var scrollDownAnchor = document.querySelector('#main');
 
+  svg4everybody();
 
   if (feedbackScroll && feedbackAnchor) {
     feedbackScroll.addEventListener('click', function (evt) {
@@ -50,6 +52,7 @@
 
   var openModal = function () {
     modal.classList.add('modal--show');
+    body.classList.add('modal--open')
 
     if (closeBtnModal && modalOverlay) {
       modalFormName.focus();
@@ -61,6 +64,7 @@
 
   var closeModal = function () {
     modal.classList.remove('modal--show');
+    body.classList.remove('modal--open')
     closeBtnModal.removeEventListener('click', onClickCloseModalBtn);
     modalOverlay.removeEventListener('click', onClickCloseModalBtn);
     document.removeEventListener('keydown', onEscKeyPressDocument);
@@ -68,7 +72,7 @@
 
   var onSubmitToLocalStorageСonsultation = function (evt) {
 
-    if (modalFormName && modalFormTel && modalFormQuestion) {
+    if (modalFormName.value && modalFormTel.value && modalFormQuestion.value) {
       evt.preventDefault();
 
       var сonsultation = {
@@ -86,7 +90,7 @@
   var clearLocalStorage = function () {
     window.setTimeout(function () {
       localStorage.clear();
-    }, 60000);
+    }, 10000);
   };
 
   var onClickCallbackBtn = function (evt) {
@@ -134,15 +138,15 @@
     footerContacts.addEventListener('click', onClickFooterContacts);
   }
 
-  if (modalForm) {
-    modalForm.addEventListener('submit', onSubmitToLocalStorageСonsultation);
-  }
-
-  if (localStorage.length) {
+  if (localStorage.getItem('сonsultation') !== null) {
     var data = JSON.parse(localStorage.getItem('сonsultation'));
-    modalFormName.value = data.name;
-    modalFormTel.value = data.telephone;
-    modalFormQuestion.value = data.question;
+
+    if (typeof data === 'object') {
+      modalFormName.value = data.name;
+      modalFormTel.value = data.telephone;
+      modalFormQuestion.value = data.question;
+    }
+
     clearLocalStorage();
   }
 

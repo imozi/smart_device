@@ -76,7 +76,7 @@
 
 .header__callback {
   display: block;
-  width: 182px;
+  width: 183px;
   padding: 13px 27px;
   border: 1px solid $white;
   border-radius: 5px;
@@ -146,6 +146,11 @@
   .header__logo {
     max-width: 148px;
     height: 38px;
+  }
+
+  .header__logo .title,
+  .header__logo .subtitle {
+    display: none;
   }
 
   .header__feedback-email {

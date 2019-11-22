@@ -48,10 +48,6 @@
   margin-bottom: 49px;
 }
 
-.footer__nav-group--pr {
-  padding-right: 15px;
-}
-
 .footer__social-list {
   display: flex;
   flex-wrap: wrap;
@@ -87,7 +83,16 @@
 
 .footer__nav-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.footer__nav-list li:nth-child(2n+1) {
+  width: 60%;
+}
+
+.footer__nav-list li:nth-child(2n) {
+  width: 30.9%;
 }
 
 .footer__contacts-list p {
